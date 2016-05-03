@@ -1,7 +1,7 @@
 <?php 
 require_once("mysqliConnect.php");
 
-$sq=mysqli_query($con, "select id, date, closing, symbol from quotes where symbol='HMB' && date between '2010-01-01' and '2016-04-01' order by date ASC");
+$sq=mysqli_query($con, "select id, date, closing, symbol from quotes where symbol='HMB' && date between '2010-01-01' and '2016-01-01' order by date ASC");
 echo '{"HMB": [';
 
 $curRow=1;
